@@ -1,6 +1,36 @@
 import 'package:flutter/material.dart';
 import 'dart:convert';
 
+class Tela_inicial extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+          image: DecorationImage(
+              image: AssetImage('assets/img/fundocovid.jpg'),
+              fit: BoxFit.cover)),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text(
+            'Veja Agora os casos de Covid',
+            style:
+                TextStyle(color: Colors.white, decoration: TextDecoration.none),
+          ),
+          ElevatedButton.icon(
+            icon: Icon(Icons.arrow_forward_rounded),
+            label: Text('Iniciar'),
+            onPressed: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => MyHomePage()));
+            },
+          )
+        ],
+      ),
+    );
+  }
+}
+
 class MyHomePage extends StatefulWidget {
   @override
   _MyHomePageState createState() => _MyHomePageState();

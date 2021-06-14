@@ -12,9 +12,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Aplicativo saude',
       theme: ThemeData(
-        primarySwatch: Colors.brown,
+        primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(),
+      home: Tela_inicial(),
     );
   }
 }
