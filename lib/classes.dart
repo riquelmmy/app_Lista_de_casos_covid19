@@ -14,8 +14,10 @@ class Tela_inicial extends StatelessWidget {
         children: [
           Text(
             'Veja Agora os casos de Covid',
-            style:
-                TextStyle(color: Colors.white, decoration: TextDecoration.none),
+            style: TextStyle(
+                color: Colors.white,
+                decoration: TextDecoration.none,
+                fontSize: 40),
           ),
           ElevatedButton.icon(
             icon: Icon(Icons.arrow_forward_rounded),
